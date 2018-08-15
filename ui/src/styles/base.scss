@@ -1,0 +1,59 @@
+@import 'src/styles/colors';
+
+body {
+  background: $gray;
+  font: 16px / 1.5 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $theme;
+
+  &:hover {
+    color: $theme-darker;
+  }
+}
+
+.container {
+  width: 1020px;
+  margin: 30px auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input, button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid $theme;
+  outline: none;
+}
+
+button {
+  background: $theme;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: $theme-darker;
+    border-color: $theme-darker;
+  }
+}
+
+.alert {
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 0;
+
+  &.error {
+    background: $danger;
+  }
+  
+  &.success {
+    background: $success;
+  }
+}

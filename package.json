@@ -1,0 +1,38 @@
+{
+  "name": "php-vue-spa",
+  "version": "1.0.0",
+  "author": "József Sallai",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "1.1.5",
+    "font-awesome": "^4.7.0",
+    "lodash.find": "^4.6.0",
+    "lodash.without": "^4.4.0",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.1",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "vue": "^2.3.4",
+    "vue-js-modal": "^1.3.16",
+    "vue-loader": "13.7.2",
+    "vue-router": "3.0.1",
+    "vue-template-compiler": "^2.3.4",
+    "vuex": "3.0.1",
+    "webpack": "^3.5.3"
+  },
+  "scripts": {
+    "build": "cd ui; webpack",
+    "build:windows": "cd ui && webpack",
+    "watch": "cd ui; webpack --watch",
+    "watch:windows": "cd ui && webpack --watch"
+  }
+}
