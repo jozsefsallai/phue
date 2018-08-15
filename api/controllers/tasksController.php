@@ -121,8 +121,18 @@ class TasksController {
 
     $taskId = $req['params']['id'];
 
-    $record = $oldData['tasks'][$taskId];
-    unset($oldData['tasks'][$taskId]);
+    $targetTask = array_search($taskId, array_column($oldData['tasks'], 'id'));
+
+    if (!isset($targetTask)) {
+      http_response_code(500);
+      return $res->json(array(
+        'ok' => false,
+        'error' => 'Task not found'
+      ));
+    }
+
+    $record = $oldData['tasks'][$targetTask];
+    unset($oldData['tasks'][$targetTask]);
     $oldData['tasks'] = array_values($oldData['tasks']);
 
     $newData = json_encode($oldData, JSON_PRETTY_PRINT);
