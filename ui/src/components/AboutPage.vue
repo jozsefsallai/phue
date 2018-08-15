@@ -1,6 +1,8 @@
 <template lang="pug">
   app-template
-    h2.title PHP Vue Single Page Application Demo
+    center
+      img(src='/images/logo.png', width='300', alt='Phue logo')
+    h2.title Phue - PHP Vue Single Page Application Demo
     p
       | This is a simple demo for a single page application that uses
       | PHP for the API backend and Vue for the frontend. The demo also

@@ -2,7 +2,7 @@
   .app
     header
       .logo
-        router-link(to='/') PHP Vue SPA
+        router-link(to='/') Phue
       nav.navigation
         router-link(to='/') Home
         router-link(to='/about') About

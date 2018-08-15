@@ -1,8 +1,11 @@
-# PHP Vue SPA
+<p align="center"><img src="public/images/logo.png" width="150" alt="Phue logo" /></p>
 
-PHP microframework for creating powerful single page applications powered by Vue.js.
+<h1 align="center">Phue</h1>
+<h4 align="center">PHP microframework for creating powerful single page applications powered by Vue.js.</h4>
 
-**Features:**
+---
+
+## Features:
  * PHP API on the backend, Vue.js on the frontend
  * Easy-to-use MVC platform
  * Powerful Express-like router
@@ -19,8 +22,8 @@ PHP microframework for creating powerful single page applications powered by Vue
 Clone the repository:
 
 ```
-git clone git@github.com:jozsefsallai/php-vue-spa
-cd php-vue-spa
+git clone git@github.com:jozsefsallai/phue
+cd phue
 ```
 
 Install the dependencies:
@@ -37,12 +40,12 @@ yarn build
 # or yarn build:windows if you're on a Windows machine
 ```
 
-Create a virtualhost that points to `/path/to/php-vue-spa/public`. Example nginx config:
+Create a virtualhost that points to `/path/to/phue/public`. Example nginx config:
 
 ```
 server {
   listen 80;
-  root /path/to/php-vue-spa/public/;
+  root /path/to/phue/public/;
   index index.php index.html;
 
   server_name your_domain_name;
@@ -67,6 +70,21 @@ To test the API calls, a utility like Postman is recommended.
 The microframework comes with a built-in example to get you started. The example is a basic to-do app that allows you to add, edit, delete tasks, as well as specify whether they are done or still need to be done. 
 
 The tasks are stored in a JSON file, but the same thing can be accomplished using MySQL (in fact, I do recommend that you use MySQL and not JSON). The reason I went with JSON is that I wanted to make the process of getting started less of a hassle (setting up a database, creating a config with the database details, etc.).
+
+## Building For Production
+
+To build the frontend for production use, make sure to specify the appropriate NODE_ENV:
+
+```
+NODE_ENV=production yarn build
+```
+
+or if you're on Windows:
+
+```
+set NODE_ENV=production
+yarn build
+```
 
 ## Contribution
 
