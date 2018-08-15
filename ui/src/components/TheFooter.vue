@@ -11,7 +11,7 @@
 export default {
   name: 'the-footer',
   computed: {
-    githubUrl: () => 'https://github.com/jozsefsallai/php-vue-spa'
+    githubUrl: () => 'https://github.com/jozsefsallai/phue'
   }
 };
 </script>
