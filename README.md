@@ -14,7 +14,7 @@
 ## Requirements
 
  * PHP (>5.4.0)
- * Node.js (for building the frontend) (>8.x)
+ * Node.js (for building the frontend) (>10.x recommended)
  * A web server (nginx, Apache, lighttpd, etc.) :)
 
 ## Getting Started
